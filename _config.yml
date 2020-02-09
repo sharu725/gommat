@@ -1,3 +1,8 @@
+title: Gommat
+description: A minimal blog
+
+baseurl: /gommat
+
 include:
   - _pages
 

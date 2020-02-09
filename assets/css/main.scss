@@ -1,0 +1,45 @@
+---
+---
+
+@charset "utf-8";
+
+//customize bootstrap theme
+// Color system
+$primary: {{site.primary}};
+$secondary: {{site.secondary}};
+$success: {{site.success}};
+$info: {{site.info}};
+$warning: {{site.warning}};
+$danger: {{site.danger}};
+$light: {{site.light}};
+$dark: {{site.dark}};
+
+
+$base-ff: 'Montserrat', sans-serif;
+$head-ff: 'Merriweather Sans', sans-serif;
+$base-fs: 0.8rem;
+
+// Do not remove this line
+$theme-colors: () !default;
+
+// Width of the content area
+$content-width: 800px;
+$on-palm: 600px;
+$on-laptop: 800px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:700,700i|Montserrat:400,400i,600,600i&display=swap');
+@import "bootstrap/bootstrap", "style", "custom";
